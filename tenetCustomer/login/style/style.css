@@ -1,0 +1,176 @@
+/*******************************************************/
+/************google service unavailable for now!*******/
+/*****************************************************/
+.tenet-register-googlelogin {
+    display: none;
+}
+
+body,
+html {
+    height: 100%;
+    direction: rtl;
+    font-family: sansLight;
+}
+
+img.tenet-sigup-single-logo {
+    position: absolute;
+    width: 5%;
+    top: 2%;
+    right: 2%;
+}
+
+
+/************** card component style *****************/
+
+
+.tenet-register-login-submit {
+    font-family: 'sansBold';
+    border: none !important;
+    letter-spacing: 1.5px;
+    box-shadow: rgb(182 200 215) 3px 3px 6px 0px inset, rgb(224 232 233 / 70%) -3px -3px 6px 1px inset;
+}
+.tenet-register-login-submit:hover {
+    color: #0d6efd;
+    background: #ebffdb;
+}
+.tenet-register-linkreg{
+    border: 1px solid #d2ffae !important;
+    background: #ebffdb;
+}
+.tenet-register-linkreg:hover{
+    background: #fff;
+    color: #198754;
+}
+
+.has-not-border {
+    border: none;
+}
+
+.tenet-register-logincard {
+    box-shadow: 0 0 7px 6px #00000040;
+    border-radius: 5%;
+}
+
+.tenet-register-login-header {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+p.tenet-register-login-wellcome {
+    font-family: 'sansBold';
+    font-size: 3.5vh;
+    margin-right: 4%;
+}
+
+input.tenet-register-username,
+input.tenet-register-password {
+    border-bottom: 1px solid #abababbd;
+    border-radius: 0;
+}
+
+i.tenet-register-logo-top {
+    font-size: 6vh;
+    align-self: center;
+    margin-top: 5%;
+}
+
+.has-updown-margin-form {
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+
+i.tenet-register-gpluslogo.fab.fa-google-plus-g {
+    font-size: 3.2vh;
+}
+
+i.tenet-register-forgotpass {
+    font-size: 2vh;
+    margin-top: 5%;
+    font-style: normal;
+    font-family: sansBold;
+}
+
+.tenet-register-logincard {
+    background: #fff;
+}
+
+
+
+/******************************************/
+/***********responsive styles*************/
+@media only screen and (max-width: 1925px) {
+    body {
+        background-image: url("../../components/bckgrnd/loginBack1920.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1445px) {
+    body {
+        background-image: url("../../components/bckgrnd/loginBack1440.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1029px) {
+    body {
+        background-image: url("../../components/bckgrnd/loginBack1024.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    .tenet-register-logincard {
+        background: #fff;
+    }
+
+    body {
+        background-image: url("../../components/bckgrnd/loginBack768.png");
+        background-size: cover;
+    }
+}
+
+/* @media only screen and (max-width: 450px) {
+    .tenet-register-logincard {
+        height: 100%;
+        background: #fff;
+        border-radius: 0 !important;
+    }
+    i.tenet-register-forgotpass {
+        margin-top: 2%;
+    }
+} */
+
+@media only screen and (max-width: 430px) {
+    .tenet-sigup-single-logo {
+        display: none;
+    }
+
+    i.tenet-register-forgotpass {
+        margin-top: 2%;
+    }
+
+    body {
+        background-image: url("../../components/bckgrnd/loginBack425.png");
+        background-size: cover;
+    }
+
+    .tenet-register-logincard {
+        height: 100%;
+    }
+
+    .tenet-register-logincard,
+    .tenet-register-login-header,
+    input {
+        border-radius: 0 !important;
+        background: #ebffbd86 !important;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    body {
+        background-image: url("../../components/bckgrnd/loginBack375.png");
+        background-size: cover;
+    }
+}

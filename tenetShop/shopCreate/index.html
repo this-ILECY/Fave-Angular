@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="../components/style/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/duotone.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/regular.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/light.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/styleside.css" rel="stylesheet">
+    <link href="../components/assests.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid tenet-shop-body">
+        <div class="tenet-shop-row">
+            <div class="d-flex flex-column bg-light tenet-nav col-1 tenet-shop-nav-side tenet-box-shadow">
+                <a href="#" class="d-block link-dark text-decoration-none tenet-nav-link-div">
+                    <img src="../components/logo/RecLogo.png" class="img-fluid">
+                </a>
+                <ul class="nav nav-pills mt-auto mb-auto tenet-nav-ul">
+                    <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-promotion-hover tenet-box-shadow tenet-hover-shadow"
+                        data-bs-toggle="tooltip" data-bs-placement="left" title="پروموشن ها">
+                        <a href="#" class="nav-link border-bottom tenet-nav-link" aria-current="page">
+                            <i class="fad fa-box-full tenet-nav-icon tenet-nav-promotion fa-swap-opacity"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-report-hover tenet-box-shadow tenet-hover-shadow" data-bs-toggle="tooltip"
+                        data-bs-placement="left" title="گزارشات">
+                        <a href="#" class="nav-link border-bottom tenet-nav-link">
+                            <i class="fad fa-file-chart-pie tenet-nav-icon tenet-nav-pie"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-shop-hover tenet-box-shadow tenet-hover-shadow" data-bs-toggle="tooltip"
+                        data-bs-placement="left" title="فروشگاه من">
+                        <a href="#" class="nav-link border-bottom tenet-nav-link">
+                            <i class="fad fa-store tenet-nav-icon tenet-nav-shop"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="dropdown border-top mt-auto tenet-nav-item tenet-nav-hover tenet-nav-downitem tenet-box-shadow tenet-hover-shadow"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fad fa-power-off tenet-nav-logout tenet-nav-logout-hover fa-swap-opacity"></i>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade tenet-nav-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog tenet-nav-modal-dialog">
+                    <div class="modal-content tenet-nav-modal-content w-auto">
+                        <div class="modal-body tenet-nav-modal-body d-flex justify-content-between">
+                            <p class="tenet-nav-modal-text">میخوای خارج شی؟</p>
+                            <div class="tenet-nav-modal-buttons">
+                                <button type="button" class="btn btn-light tenet-nav-model-dismiss"
+                                    data-bs-dismiss="modal">نه</button>
+                                <button type="button" class="btn btn-primary tenet-nav-modal-yes">بله، خارج شو</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-9 m-auto mt-0 position-relative shadow tenet-shop-main-card">
+                <div class="tenet-shop-banner-div"><br /></div>
+                <img src="../components/img/user.png" class="tenet-shop-profile translate-middle border border-light rounded-circle tenet-box-shadow">
+                </img>
+                <div class="tenet-shop-info-card">
+                    <div class="row">
+                        <i class="fad fa-pencil-alt tenet-shop-pencil d-inline-block w-auto"></i>
+                        <input type="text" class="form-control tenet-shop-shop-name" readonly value="فروشگاه من">
+                    </div>
+                    <div class="col-12 tenet-shop-contact">
+                        <div class="input-group tenet-shop-tel-group col-6 d-inline w-auto">
+                            <label class="form-control tenet-shop-label-tel tenet-shop-label has-no-border d-inline">شماره تلفن :</label>
+                            <input type="text" class="form-control tenet-shop-input-tel d-inline has-no-border w-auto" readonly
+                                value="09121212112">
+                        </div>
+                        <div class="input-group tenet-shop-tel-group col-6 d-inline w-auto">
+                            <label class="form-control tenet-shop-label-tel tenet-shop-label has-no-border d-inline">شماره همراه :</label>
+                            <input type="text" class="form-control tenet-shop-input-tel d-inline has-no-border w-auto" readonly
+                                value="55453200">
+                        </div>
+                    </div>
+                    <div class="input-group tenet-shop-tel-group w-auto">
+                        <label class="form-control tenet-shop-label-tel has-no-border w-auto">آدرس :</label>
+                        <textarea type="text" class="form-control tenet-shop-input-address has-no-border w-50" readonly
+                            value="93154354"
+                            rows="3">تهران ونک چهارراه جهان کودک افریقا خیابان ناوک ساختمان ناوک طبقه دوم</textarea>
+                    </div>
+                    <div class=" w-auto">
+                        <label class="form-control has-no-border w-20">آدرس :</label>
+                        <div id="map" class="tenet-neshan-map"></div>
+                        <p id="log">logs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="../components/script/jquery-3.6.0.min.js"></script>
+    <script src="../components/script/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/scriptside.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../components/style/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/duotone.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/regular.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/light.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="../components/assests.css" rel="stylesheet">
+    <title>SignUp</title>
+
+</head>
+
+
+<body class="d-flex flex-column position-relative">
+    <i>
+    <img class="tenet-sigup-single-logo" src="..//components/logo/RecLogo.png"></img>
+</i>
+    <div id="tenet-card-signup" class="tenet-signup-signupcard has-not-border col-12 col-sm-6 col-md-5 my-auto align-self-center">
+        <div class="card-body">
+            <div class="card-body">
+                <div class="tenet-signup-signup-header card-header bg-white">
+                    <i class="tenet-signup-logo-top fad fa-user-plus d-inline-block"></i>
+                    <p class="tenet-signup-signup-wellcome d-inline-block"> ثبت نام کن! </p>
+                </div>
+                <form class="tenet-form-signup needs-validation" role="form" novalidate>
+                    <div class="input-group has-validation">
+                        <input id="tenet-signup-username" required type="text" placeholder="نام کاربری" class="tenet-signup-username has-not-border has-updown-margin-form form-control">
+                        <div class="valid-feedback">نام کاربری در دسترس است!</div>
+                        <div class="invalid-feedback">نام کاربری ناموجود است!</div>
+                    </div>
+                    <div class="has-validation">
+                        <input type="password" required class="tenet-signup-password has-not-border has-updown-margin-form form-control" id="password" placeholder="رمز عبور">
+                        <div class="invalid-feedback password-feedback">رمز ضعیف</div>
+                        <input type="password" required class="tenet-signup-password has-not-border has-updown-margin-form form-control" id="repassword" placeholder="تایید رمز عبور">
+                        <div class="invalid-feedback repassword-feedback">تکرار رمز عبور همخوانی ندارد</div>
+                        <div class="pwstrength_viewport_progress"></div>
+                        <div class="tenet-signup-div-submit">
+                            <button type="submit" class="tenet-register-login-submit tenet-box-shadow tenet-hover-shadow col-12 col-md-4 has-updown-margin-form btn btn-primary">ثبت نام</button>
+                        </div>
+                        <a href="../login/index.html" class="tenet-signup-linkreg btn tenet-box-shadow tenet-hover-shadow has-updown-margin-form col-12 btn-outline-success ">عضویت داری؟ وارد شو!</a>
+                    </div>
+            </div>
+        </div>
+        <!-- <script src="https://kit.fontawesome.com/41b3770135.js " crossorigin="anonymous "></script> -->
+        <script src="../components/script/jquery-3.6.0.min.js"></script>
+        <script src="../components/script/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../components/script/dist/js/pwstrength-bootstrap.min.js"></script>
+        <script src="script/script.js "></script>
+</body>
+
+
+</html>
