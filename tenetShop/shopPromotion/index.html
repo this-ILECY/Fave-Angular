@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="../components/style/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/duotone.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/regular.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/light.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/styleside.css" rel="stylesheet">
+    <link href="../components/assests.css" rel="stylesheet">
+    <link href="../components/promotionCard.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid tenet-shop-body">
+        <div class="tenet-shop-row">
+            <!--SideBar-->
+            <div class="d-flex flex-column bg-light tenet-nav col-2 col-lg-1 tenet-shop-nav-side tenet-box-shadow">
+                <a href="#" class="d-block link-dark text-decoration-none tenet-nav-link-div">
+                    <img src="../components/logo/RecLogo.png" class="img-fluid">
+                </a>
+                <ul class="nav nav-pills mt-auto mb-auto tenet-nav-ul">
+                    <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-promotion-hover tenet-box-shadow tenet-hover-shadow" data-bs-toggle="tooltip" data-bs-placement="left" title="پروموشن ها">
+                        <a href="#" class="nav-link border-bottom tenet-nav-link" aria-current="page">
+                            <i class="fad fa-box-full tenet-nav-icon tenet-nav-promotion fa-swap-opacity"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-report-hover tenet-box-shadow tenet-hover-shadow" data-bs-toggle="tooltip" data-bs-placement="left" title="گزارشات">
+                        <a href="#" class="nav-link border-bottom tenet-nav-link">
+                            <i class="fad fa-file-chart-pie tenet-nav-icon tenet-nav-pie"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-shop-hover tenet-box-shadow tenet-hover-shadow" data-bs-toggle="tooltip" data-bs-placement="left" title="فروشگاه من">
+                        <a href="#" class="nav-link border-bottom tenet-nav-link">
+                            <i class="fad fa-store tenet-nav-icon tenet-nav-shop"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="dropdown border-top mt-auto tenet-nav-item tenet-nav-hover tenet-nav-downitem tenet-box-shadow tenet-hover-shadow" data-bs-toggle="modal" data-bs-target="#tenetSideExit">
+                    <i class="fad fa-power-off tenet-nav-logout tenet-nav-logout-hover fa-swap-opacity"></i>
+                </div>
+            </div>
+            <!-- Exit Side Modal -->
+            <div class="modal fade tenet-nav-modal" id="tenetSideExit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog tenet-nav-modal-dialog">
+                    <div class="modal-content tenet-nav-modal-content w-auto">
+                        <div class="modal-body tenet-nav-modal-body d-flex justify-content-between">
+                            <p class="tenet-nav-modal-text">میخوای خارج شی؟</p>
+                            <div class="tenet-nav-modal-buttons">
+                                <button type="button" class="btn btn-light tenet-nav-model-dismiss" data-bs-dismiss="modal">نه</button>
+                                <button type="button" class="btn btn-primary tenet-nav-modal-yes">بله، خارج شو</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--MainCard-->
+            <div class="col-9 m-auto mt-0 position-relative shadow tenet-shop-main-card">
+                <div class="row tenet-card-main-row">
+                    <!-- 
+
+                    Best:
+                    -->
+                    <!--Best promotion Card-->
+                    <div class="tenet-pro-card-full col-xl-3 col-lg-4 col-md-6 col-sm-12 tenet-pro-card-best tenet-box-shadow tenet-hover-shadow" data-bs-toggle="modal" data-bs-target="#tenetBestCardModal">
+                        <div class="card-body tenet-pro-card-body">
+                            <div class="tenet-pro-card-row row">
+                                <div class="col tenet-pro-card-class-div">
+                                    <i class="fad fa-medal tenet-pro-card-class"></i>
+                                    <i class="fad fa-medal tenet-pro-card-class"></i>
+                                    <i class="fad fa-medal tenet-pro-card-class"></i>
+                                </div>
+                                <div class="col tenet-pro-card-left">
+                                    <h6 class="tenet-pro-card-after-price">12500</h6>
+                                    <div class="tenet-pro-card-price-percent d-flex">
+                                        <p class="tenet-pro-card-before-price tenet-card-best-before w-auto"><del>25000</del></p>
+                                        <p class="tenet-pro-card-percent tenet-card-best-percent w-auto">50%</p>
+                                    </div>
+                                </div>
+                                <h5 class="tenet-pro-card-title justify-content-center tenet-pro-card-row row">پیتزای سبزیجات خراب</h5>
+                                <div class="d-flex tenet-pro-card-where tenet-pro-card-row row">
+                                    <p class="w-auto tenet-pro-card-from">از:</p>
+                                    <h6 class="w-auto tenet-pro-card-shop">ویرا سیستم</h6>
+                                </div>
+                                <div class="tenet-pro-card-time d-flex justify-content-end p-0 tenet-pro-card-row row">
+                                    <i class="w-auto fad fa-history tenet-pro-card-time-logo"></i>
+                                    <p class="w-auto tenet-pro-card-time-text">01:25:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Best promotion Modal-->
+                    <div class="modal fade p-0" id="tenetBestCardModal" tabindex="-1" aria-labelledby="tenetWorstCardModal" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <i class="tenet-card-modal-close fad fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="tenet-nav-modal-text">میخوای خا؟</p>
+                                    <div class="tenet-nav-modal-buttons">
+                                        <button type="button" class="btn btn-light tenet-nav-model-dismiss" data-bs-dismiss="modal">نه</button>
+                                        <button type="button" class="btn btn-primary tenet-nav-modal-yes">بله، خارج شو</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 
+
+                    Middle:
+                    -->
+                    <!--Middle promotion Card-->
+                    <div class="tenet-pro-card-full col-xl-3 col-lg-4 col-md-6 col-sm-12 tenet-pro-card-middle tenet-box-shadow tenet-hover-shadow" data-bs-toggle="modal" data-bs-target="#tenetMiddleCardModal">
+                        <div class="card-body tenet-pro-card-body">
+                            <div class="tenet-pro-card-row row">
+                                <div class="col tenet-pro-card-class-div">
+                                    <i class="fad fa-medal tenet-pro-card-class"></i>
+                                    <i class="fad fa-medal tenet-pro-card-class"></i>
+                                    <i class="fad fa-medal tenet-pro-card-class invisible"></i>
+                                </div>
+                                <div class="col tenet-pro-card-left">
+                                    <h6 class="tenet-pro-card-after-price">12500</h6>
+                                    <div class="tenet-pro-card-price-percent d-flex">
+                                        <p class="tenet-pro-card-before-price tenet-card-middle-before w-auto"><del>25000</del></p>
+                                        <p class="tenet-pro-card-percent tenet-card-middle-percent w-auto">50%</p>
+                                    </div>
+                                </div>
+                                <h5 class="tenet-pro-card-title justify-content-center tenet-pro-card-row row">آب هویج بستنی ترش</h5>
+                                <div class="d-flex tenet-pro-card-where tenet-pro-card-row row">
+                                    <p class="w-auto tenet-pro-card-from">از:</p>
+                                    <h6 class="w-auto tenet-pro-card-shop">ویرا سیستم</h6>
+                                </div>
+                                <div class="tenet-pro-card-time d-flex justify-content-end p-0 tenet-pro-card-row row">
+                                    <i class="w-auto fad fa-history tenet-pro-card-time-logo"></i>
+                                    <p class="w-auto tenet-pro-card-time-text">01:25:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Middle promotion Modal-->
+                    <div class="modal fade p-0 tenet-promotion-modal" id="tenetMiddleCardModal" tabindex="-1" aria-labelledby="tenetWorstCardModal" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <i class="tenet-card-modal-close fad fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
+                                    <p class="tenet-nav-modal-text">میخوای خا؟</p>
+                                    <div class="tenet-nav-modal-buttons">
+                                        <button type="button" class="btn btn-light tenet-nav-model-dismiss" data-bs-dismiss="modal">نه</button>
+                                        <button type="button" class="btn btn-primary tenet-nav-modal-yes">بله، خارج شو</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 
+
+                    Worst:
+                    -->
+                    <!--Worst promotion Card-->
+                    <div class="tenet-pro-card-full col-xl-3 col-lg-4 col-md-6 col-sm-12 tenet-pro-card-worst tenet-box-shadow tenet-hover-shadow" data-bs-toggle="modal" data-bs-target="#tenetWorstCardModal">
+                        <div class="card-body tenet-pro-card-body">
+                            <div class="tenet-pro-card-row row">
+                                <div class="col tenet-pro-card-class-div">
+                                    <i class="fad fa-medal tenet-pro-card-class"></i>
+                                    <i class="fad fa-medal tenet-pro-card-class invisible"></i>
+                                    <i class="fad fa-medal tenet-pro-card-class invisible"></i>
+                                </div>
+                                <div class="col tenet-pro-card-left">
+                                    <h6 class="tenet-pro-card-after-price">12500</h6>
+                                    <div class="tenet-pro-card-price-percent d-flex">
+                                        <p class="tenet-pro-card-before-price tenet-card-worst-before w-auto"><del>25000</del></p>
+                                        <p class="tenet-pro-card-percent tenet-card-worst-percent w-auto">50%</p>
+                                    </div>
+                                </div>
+                                <h5 class="tenet-pro-card-title justify-content-center tenet-pro-card-row row">فاسد</h5>
+                                <div class="d-flex tenet-pro-card-where tenet-pro-card-row row">
+                                    <p class="w-auto tenet-pro-card-from">از:</p>
+                                    <h6 class="w-auto tenet-pro-card-shop">ویرا سیستم</h6>
+                                </div>
+                                <div class="tenet-pro-card-time d-flex justify-content-end p-0 tenet-pro-card-row row">
+                                    <i class="w-auto fad fa-history tenet-pro-card-time-logo"></i>
+                                    <p class="w-auto tenet-pro-card-time-text">01:25:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Worst promotion Modal-->
+                    <div class="modal fade p-0" id="tenetWorstCardModal" tabindex="-1" aria-labelledby="tenetWorstCardModal" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <i class="tenet-card-modal-close fad fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
+                                    <p class="tenet-nav-modal-text">میخوای خا؟</p>
+                                    <div class="tenet-nav-modal-buttons">
+                                        <button type="button" class="btn btn-light tenet-nav-model-dismiss" data-bs-dismiss="modal">نه</button>
+                                        <button type="button" class="btn btn-primary tenet-nav-modal-yes">بله، خارج شو</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="../components/script/jquery-3.6.0.min.js"></script>
+        <script src="../components/script/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script/script.js"></script>
+        <script src="script/scriptside.js"></script>
+
+</body>
+
+</html>
