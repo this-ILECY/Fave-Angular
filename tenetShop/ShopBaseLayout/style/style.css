@@ -1,0 +1,26 @@
+body {
+    background-image: linear-gradient(27deg, #ebffdb 0%, #d6ebc594 74%);
+    direction: rtl;
+    font-family: 'sansNormal';
+}
+
+.tenet-shop-body,
+.tenet-shop-row {
+    height: 100%;
+}
+
+.tenet-shop-row {
+    display: flex;
+}
+
+/*****************************************************/
+@media only screen and (max-width: 430px) {
+
+    html, body,
+    .tenet-shop-body,
+    .tenet-shop-main-card {
+        margin: 0 !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}

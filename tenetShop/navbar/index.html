@@ -18,45 +18,51 @@
 </head>
 
 <body>
-    <div class="d-flex flex-column h-100 bg-light tenet-nav col-1 shadow">
-        <a href="#" class="d-block p-3 link-dark text-decoration-none">
-            <img src="../tenetSingleLogo.png" class="img-fluid">
+    <div class="d-flex flex-column bg-light tenet-nav col-1 tenet-shop-nav-side tenet-box-shadow">
+        <a href="#" class="d-block link-dark text-decoration-none tenet-nav-link-div">
+            <img src="../components/logo/RecLogo.png" class="img-fluid">
         </a>
         <ul class="nav nav-pills mt-auto mb-auto tenet-nav-ul">
-            <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-promotion-hover" data-bs-toggle="tooltip" data-bs-placement="left" title="پروموشن ها">
+            <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-promotion-hover tenet-box-shadow tenet-hover-shadow"
+                data-bs-toggle="tooltip" data-bs-placement="left" title="پروموشن ها">
                 <a href="#" class="nav-link border-bottom tenet-nav-link" aria-current="page">
                     <i class="fad fa-box-full tenet-nav-icon tenet-nav-promotion fa-swap-opacity"></i>
                 </a>
             </li>
-            <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-report-hover" data-bs-toggle="tooltip" data-bs-placement="left" title="گزارشات">
+            <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-report-hover tenet-box-shadow tenet-hover-shadow" data-bs-toggle="tooltip"
+                data-bs-placement="left" title="گزارشات">
                 <a href="#" class="nav-link border-bottom tenet-nav-link">
                     <i class="fad fa-file-chart-pie tenet-nav-icon tenet-nav-pie"></i>
                 </a>
             </li>
-            <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-shop-hover" data-bs-toggle="tooltip" data-bs-placement="left" title="فروشگاه من">
+            <li class="nav-item tenet-nav-item tenet-nav-hover tenet-nav-shop-hover tenet-box-shadow tenet-hover-shadow" data-bs-toggle="tooltip"
+                data-bs-placement="left" title="فروشگاه من">
                 <a href="#" class="nav-link border-bottom tenet-nav-link">
                     <i class="fad fa-store tenet-nav-icon tenet-nav-shop"></i>
                 </a>
             </li>
         </ul>
-        <div class="dropdown border-top mt-auto tenet-nav-item tenet-nav-downitem" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div class="dropdown border-top mt-auto tenet-nav-item tenet-nav-hover tenet-nav-downitem tenet-box-shadow tenet-hover-shadow"
+            data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="fad fa-power-off tenet-nav-logout tenet-nav-logout-hover fa-swap-opacity"></i>
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade tenet-nav-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog tenet-nav-modal-dialog">
-            <div class="modal-content tenet-nav-modal-content w-auto">
-                <div class="modal-body tenet-nav-modal-body d-flex justify-content-between">
-                    <p class="tenet-nav-modal-text">میخوای خارج شی؟</p>
-                    <div class="tenet-nav-modal-buttons">
-                        <button type="button" class="btn btn-light tenet-nav-model-dismiss" data-bs-dismiss="modal">نه</button>
-                        <button type="button" class="btn btn-primary tenet-nav-modal-yes">بله، خارج شو</button>
-                    </div>
+    <div class="modal fade tenet-nav-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog tenet-nav-modal-dialog">
+        <div class="modal-content tenet-nav-modal-content w-auto">
+            <div class="modal-body tenet-nav-modal-body d-flex justify-content-between">
+                <p class="tenet-nav-modal-text">میخوای خارج شی؟</p>
+                <div class="tenet-nav-modal-buttons">
+                    <button type="button" class="btn btn-light tenet-nav-model-dismiss"
+                        data-bs-dismiss="modal">نه</button>
+                    <button type="button" class="btn btn-primary tenet-nav-modal-yes">بله، خارج شو</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <script src="../components/script/jquery-3.6.0.min.js"></script>
     <script src="../components/script/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/script.js"></script>

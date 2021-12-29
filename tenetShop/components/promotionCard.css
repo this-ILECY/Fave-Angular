@@ -1,0 +1,161 @@
+.tenet-pro-card-from,
+.tenet-pro-card-time-text,
+.tenet-pro-card-before-price,
+.tenet-pro-card-percent {
+    margin: 0;
+    padding-left: 0;
+}
+
+.tenet-pro-card-body:hover {
+    cursor: pointer;
+}
+
+.tenet-pro-card-title {
+    font-size: 3.5vh;
+}
+
+.tenet-pro-card-shop,
+.tenet-pro-card-from {
+    font-size: 2vh;
+    margin-top: 10px;
+}
+
+.col.tenet-pro-card-left {
+    direction: ltr;
+}
+
+.tenet-pro-card-class {
+    font-size: 3vh;
+}
+
+.tenet-pro-card-best {
+    color: rgb(66, 136, 38);
+    border: 1px solid rgb(66, 136, 38);
+    border-radius: 15px;
+}
+
+.tenet-pro-card-middle {
+    color: rgb(146, 124, 26);
+    border: 1px solid rgb(146, 124, 26);
+    border-radius: 15px;
+}
+
+.tenet-pro-card-worst {
+    color: rgb(136, 41, 38);
+    border: 1px solid rgba(136, 41, 38, 0.664);
+    border-radius: 15px;
+}
+
+.tenet-pro-card-after-price {
+    font-size: 3vh;
+    margin: 0;
+}
+
+.tenet-card-worst-before {
+    font-size: 2.5vh;
+    color: #88292694;
+    padding-right: 2vh;
+}
+
+.tenet-card-middle-before {
+    font-size: 2.5vh;
+    color: #927c1a85;
+    padding-right: 2vh;
+}
+
+.tenet-card-best-before {
+    font-size: 2.5vh;
+    color: #488826a6;
+    padding-right: 2vh;
+}
+
+.tenet-pro-card-percent {
+    color: #c13737;
+}
+
+.tenet-pro-card-title {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/*********************Modal***********************/
+
+.tenet-card-modal-close {
+    cursor: pointer;
+}
+
+
+/***************Media Queries****************/
+
+@media only screen and (max-aspect-ratio: 720/271) {
+    .tenet-pro-card-full {
+        width: 50%;
+        margin: 7.5px 0 7.5px 0;
+    }
+}
+
+
+/*768-448*/
+
+@media only screen and (max-aspect-ratio: 12/7) {
+    .tenet-pro-card-full {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 128/75) {
+    .tenet-pro-card-full {
+        width: 50%;
+    }
+}
+
+
+/*765-750*/
+
+@media only screen and (max-aspect-ratio: 128/125) {
+    .tenet-pro-card-full {
+        width: 100%;
+    }
+    .tenet-shop-main-card {
+        width: 100%;
+    }
+    .tenet-card-main-row {
+        --bs-gutter-x: 0;
+    }
+    .tenet-shop-body {
+        padding: 0;
+    }
+}
+
+
+/*1024-750*/
+
+@media only screen and (min-aspect-ratio: 512/375) {
+    .tenet-pro-card-full {
+        width: 48%;
+        margin: 7.5px auto 7.5px auto;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 512/683) {
+    .tenet-pro-card-full {
+        width: 100%;
+    }
+}
+
+
+/*1440-750*/
+
+@media only screen and (min-aspect-ratio: 48/25) {
+    .tenet-pro-card-full {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 3/4) {
+    .tenet-pro-card-full {
+        width: 100%;
+    }
+}

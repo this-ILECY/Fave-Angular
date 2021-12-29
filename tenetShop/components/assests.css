@@ -23,9 +23,10 @@
     src: url(font/IRANSansWeb_Bold.ttf);
 }
 
-.tenet-box-shadow{
+.tenet-box-shadow {
     box-shadow: rgb(169 184 197) 3px 3px 6px 0px, rgb(213 224 233 / 8%) -3px -3px 6px 0px;
 }
-.tenet-hover-shadow:hover{
+
+.tenet-hover-shadow:hover {
     box-shadow: rgb(182 200 215) 3px 3px 6px 0px inset, rgb(224 232 233 / 32%) -3px -3px 6px 1px inset;
 }
