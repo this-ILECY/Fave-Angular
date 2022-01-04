@@ -1,5 +1,4 @@
 body {
-    background-image: linear-gradient(27deg, #ebffdb 0%, #d6ebc594 74%);
     direction: rtl;
     font-family: 'sansNormal';
 }
@@ -43,7 +42,6 @@ body {
     margin: -5% 7% 0 0;
 }
 
-
 .has-no-border {
     border-radius: 0;
     border: none;
@@ -83,23 +81,22 @@ body {
     font-size: 4vh;
 }
 
-/*****************************************************/
-@media only screen and (max-width: 430px) {
 
+/*****************************************************/
+
+@media only screen and (max-width: 430px) {
     .tenet-shop-label-tel,
     .tenet-shop-input-tel {
         width: 100% !important;
     }
-
     .tenet-shop-nav-side {
         display: none !important;
     }
-
     .tenet-shop-banner-div {
         background-size: auto 78%;
     }
-
-    html, body,
+    html,
+    body,
     .tenet-shop-body,
     .tenet-shop-main-card {
         margin: 0 !important;
@@ -109,23 +106,19 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-
     .tenet-shop-label-tel,
     .tenet-shop-input-tel {
         width: 25% !important;
     }
-
     .tenet-nav-link-div {
         padding: 10%;
     }
-
     .tenet-shop-profile {
         width: 20%;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-
     .tenet-shop-label-tel,
     .tenet-shop-input-tel {
         width: 20% !important;

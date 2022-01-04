@@ -59,6 +59,7 @@ html {
     }
 }
 
+
 /**********logout style:*********/
 
 .tenet-nav-downitem {
@@ -84,4 +85,16 @@ html {
 
 p.tenet-nav-modal-text {
     display: inline;
+}
+
+
+/****************display none and block**********************/
+
+
+/*768-750*/
+
+@media only screen and (max-aspect-ratio: 128/125) {
+    .tenet-shop-nav-side {
+        display: none !important;
+    }
 }

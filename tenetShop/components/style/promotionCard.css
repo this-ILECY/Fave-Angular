@@ -30,19 +30,19 @@
 
 .tenet-pro-card-best {
     color: rgb(66, 136, 38);
-    border: 1px solid rgb(66, 136, 38);
+    /* border: 1px solid rgb(66, 136, 38); */
     border-radius: 15px;
 }
 
 .tenet-pro-card-middle {
     color: rgb(146, 124, 26);
-    border: 1px solid rgb(146, 124, 26);
+    /* border: 1px solid rgb(146, 124, 26); */
     border-radius: 15px;
 }
 
 .tenet-pro-card-worst {
     color: rgb(136, 41, 38);
-    border: 1px solid rgba(136, 41, 38, 0.664);
+    /* border: 1px solid rgba(136, 41, 38, 0.664); */
     border-radius: 15px;
 }
 
@@ -82,8 +82,108 @@
 
 /*********************Modal***********************/
 
+.tenet-pro-modal-main {
+    color: #708936;
+}
+
+.tenet-pro-modal-body {
+    padding: 0 5%;
+}
+
+.tenet-pro-modal-content {
+    border: none;
+}
+
+.tenet-pro-modal-des {
+    text-align: justify;
+    padding-top: 2%;
+}
+
+.tenet-pro-modal-address-title {
+    margin: 1%;
+    font-family: 'sansBold';
+    color: #5f742f;
+}
+
+.tenet-pro-modal-shop-name {
+    margin: 0;
+    font-family: 'sansBold';
+    color: #5f742f;
+}
+
+.tenet-pro-modal-class-div {
+    display: block;
+    margin: 0 auto;
+    font-size: 4vh;
+    padding-right: 8%;
+    text-align: end;
+}
+
 .tenet-card-modal-close {
     cursor: pointer;
+}
+
+.tenet-pro-modal-title {
+    display: flex;
+    font-size: 4vh;
+    font-family: sansBold;
+}
+
+.tenet-pro-modal-icon-item {
+    font-size: 3vh;
+    margin: 0 auto;
+}
+
+.tenet-pro-modal-icon-item:hover {
+    cursor: pointer;
+}
+
+.tenet-pro-modal-profile {
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.tenet-pro-modal-shop-row {
+    padding-left: 0;
+    margin-right: 1%;
+}
+
+.tenet-pro-modal-price-row {
+    padding: 3% 2% 0 2%;
+}
+
+.tenet-pro-modal-left {
+    padding-left: 1%;
+}
+
+.tenet-pro-modal-left {
+    direction: ltr;
+}
+
+.tenet-pro-modal-time-text {
+    padding: 0;
+}
+
+.tenet-pro-modal-after-price {
+    color: #4f9125;
+    font-size: 3vh;
+    margin: 0;
+}
+
+.tenet-pro-modal-before-price {
+    color: #50922794;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.tenet-pro-modal-percent {
+    color: #f00;
+    margin: 0;
+}
+
+.tenet-pro-modal-footer,
+.tenet-pro-modal-header {
+    border: none;
 }
 
 

@@ -34,9 +34,3 @@ $(document).ready(function() {
         $(".tenet-nav-shop").addClass("fa-swap-opacity");
     });
 });
-
-
-
-$(function() {
-    $("#im").load("../shopCreate/index.html");
-});

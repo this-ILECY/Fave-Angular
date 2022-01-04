@@ -1,26 +1,26 @@
 @font-face {
     font-family: sansNormal;
-    src: url(font/IRANSansWeb.ttf);
+    src: url(../font/IRANSansWeb.ttf);
 }
 
 @font-face {
     font-family: sansLight;
-    src: url(font/IRANSansWeb_Light.ttf);
+    src: url(../font/IRANSansWeb_Light.ttf);
 }
 
 @font-face {
     font-family: sansMedium;
-    src: url(font/IRANSansWeb_Medium.ttf);
+    src: url(../font/IRANSansWeb_Medium.ttf);
 }
 
 @font-face {
     font-family: sansUltraLight;
-    src: url(font/IRANSansWeb_UltraLight.ttf);
+    src: url(../font/IRANSansWeb_UltraLight.ttf);
 }
 
 @font-face {
     font-family: sansBold;
-    src: url(font/IRANSansWeb_Bold.ttf);
+    src: url(../font/IRANSansWeb_Bold.ttf);
 }
 
 .tenet-box-shadow {
