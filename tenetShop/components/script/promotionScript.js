@@ -1,15 +1,18 @@
-$(document).ready(function() {
+let promotions;
+let promotion_url = "https://localhost:44377/api/Promotion/PromotionAll"
+
+
+
+$(document).ready(() => {
     pro_modal_hover();
-    promotion_all();
     $(".tenet-pro-card-title").attr('id', "hi")
-
-
-
+    promotion_all(promotion_url);
+    console.log(promotions);
 });
 
 /*every modal has three icons from font awesome.
 this is the hover effect function */
-var pro_modal_hover = function() {
+var pro_modal_hover = async() => {
     /*cart swap opacity changer*/
     $(".tenet-pro-modal-report").mouseover(function() {
         $(".tenet-pro-modal-report").addClass("fa-swap-opacity");
@@ -32,11 +35,11 @@ var pro_modal_hover = function() {
         $(".tenet-pro-modal-cart").removeClass("fa-swap-opacity");
     });
 }
-var promotion_all = function() {
+var promotion_all = async(the_url) => {
     $.get({
-        url: "https://localhost:44377/api/Promotion/PromotionAll",
+        url: the_url,
         success: function(response) {
-            console.log(response)
+            promotions = response;
         }
     })
 }

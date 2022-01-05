@@ -1,32 +1,23 @@
-// function initMap() {
-//     // The location of Uluru
-//     const uluru = { lat: -25.344, lng: 131.036 };
-//     // The map, centered at Uluru
-//     const map = new google.maps.Map(document.getElementById("map"), {
-//         zoom: 4,
-//         center: uluru,
-//     });
-//     // The marker, positioned at Uluru
-//     const marker = new google.maps.Marker({
-//         position: uluru,
-//         map: map,
-//     });
-// }
+/*Avatar swap opacity changer*/
+$(".tenet-shop-avatar-upload").mouseover(function() {
+    $(".tenet-shop-avatar-upload").addClass("fa-swap-opacity");
+});
+$(".tenet-shop-avatar-upload").mouseout(function() {
+    $(".tenet-shop-avatar-upload").removeClass("fa-swap-opacity");
+});
 
-// var myMap = new ol.Map({
-//     target: "tenet-neshan-map",
-//     key:  "web.NexSTlHWvRoUaozyhTfJsufSxMwfI2c2SVYACL8f",
-//     view: new ol.View({
-//     center: ol.proj.fromLonLat([51.338076,35.699756]),
-//     zoom: 17 })
-// })
-// // myMap.setMapType("standard-night");
-// myMap.setMapType("standard-day");
-//     // var myMap = new L.Map('tenet-neshan-map', {
-//     //     key: 'web.NexSTlHWvRoUaozyhTfJsufSxMwfI2c2SVYACL8f',
-//     //     maptype: 'dreamy',
-//     //     poi: true,
-//     //     traffic: false,
-//     //     center: [35.699739, 51.338097],
-//     //     zoom: 14
-//     // });
+let file, reader, result
+
+function encodeImageFileAsURL(element) {
+    file = element.files[0];
+    reader = new FileReader();
+    reader.onloadend = function() {
+        console.log('RESULT', reader.result)
+    }
+    result = reader.result
+    reader.readAsDataURL(file);
+    $.post({
+        url: "https://localhost:44377/api/Promotion/getimg",
+        headers: { img: result }
+    })
+}
