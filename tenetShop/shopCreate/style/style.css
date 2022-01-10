@@ -89,10 +89,20 @@ body {
     border-radius: 50%;
     border: 1px solid #00000021;
     margin-right: 13px;
+    display: inline-block;
+    position: relative;
 }
 
 .tenet-shop-avatar-upload:hover {
     cursor: pointer;
+}
+
+.tenet-shop-avatar-add-done-dis {
+    display: inline-block !important;
+}
+
+.tenet-shop-avatar-upload-done-radius {
+    border-radius: 15px;
 }
 
 
