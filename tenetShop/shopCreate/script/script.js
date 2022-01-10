@@ -6,18 +6,26 @@ $(".tenet-shop-avatar-upload").mouseout(function() {
     $(".tenet-shop-avatar-upload").removeClass("fa-swap-opacity");
 });
 
-let file, reader, result
 
 function encodeImageFileAsURL(element) {
-    file = element.files[0];
-    reader = new FileReader();
-    reader.onloadend = function() {
-        console.log('RESULT', reader.result)
+
+    var input = document.getElementById("tenet-input-upload-avatar");
+    var file = input.files;
+    var fd = new FormData();
+
+    for (var i = 0; i != file.length; i++) {
+        fd.append("avatar", file[i], "shop");
     }
-    result = reader.result
-    reader.readAsDataURL(file);
-    $.post({
-        url: "https://localhost:44377/api/Promotion/getimg",
-        headers: { img: result }
-    })
+
+    $.ajax({
+        url: "https://localhost:44377/api/Promotion/getavatar?userType=shop",
+        type: 'POST',
+        data: fd,
+        success: function(data) {},
+        cache: false,
+        processData: false,
+        contentType: false
+
+    });
+
 }
