@@ -18,46 +18,58 @@
     <link href="style/style.css" rel="stylesheet">
     <link href="../components/style/assests.css" rel="stylesheet">
 
-    <title>Document</title>
+    <title>create</title>
 </head>
 
 <body>
     <div class="container-fluid tenet-shop-body">
+
         <div class="tenet-shop-row">
             <div class="col-9 m-auto mt-0 position-relative tenet-shop-main-card">
                 <form id="tenet-shop-form-main">
-                    <div class="tenet-shop-banner-div"><br /></div>
+                    <div class="tenet-shop-banner-div position-relative">
+                        <input type="file" id="tenet-input-upload-banner" hidden onchange="bannerChange(this)" />
+                        <div class="tenet-shop-banner-upload-main shadow">
+                            <label class="" for="tenet-input-upload-banner">
+                            <i class="tenet-shop-banner-change fad fa-image fa-swap-opacity"></i>
+                        </label>
+                            <i class="tenet-shop-banner-add-done tenet-anim-add-done fad fa-check d-none"></i>
+                        </div>
+                        <br />
+                    </div>
+
                     <img src="../components/img/user.png" id="tenet-shop-profile-id" class="tenet-shop-profile translate-middle border border-light rounded-circle tenet-box-shadow">
                     </img>
                     <div class="tenet-shop-avatar-upload">
                         <input type="file" id="tenet-input-upload-avatar" hidden onchange="avatarChange(this)" />
                         <label for="tenet-input-upload-avatar"><i class="fad fa-camera tenet-shop-avatar-add"></i></label>
-                        <i class="tenet-shop-avatar-add-done fad fa-check d-none"></i>
+                        <i class="tenet-shop-avatar-add-done tenet-anim-add-done fad fa-check d-none"></i>
                     </div>
 
                     <div class="tenet-shop-info-card">
                         <div class="row">
-                            <i class="fad fa-pencil-alt tenet-shop-pencil d-inline-block w-auto"></i>
+                            <i class="tenet-shop-pencil-edit fad fa-pencil-alt tenet-shop-pencil d-inline-block w-auto"></i>
+                            <i class="tenet-shop-info-done fad fa-check w-auto d-none" id="liveToastBtn"></i>
+                            <i class="tenet-shop-info-cancel fad fa-ban w-auto d-none"></i>
                             <input id="tenet-shop-name" type="text" class="form-control tenet-shop-shop-name" readonly value="فروشگاه من">
                         </div>
                         <div class="col-12 tenet-shop-contact">
                             <div class="input-group tenet-shop-tel-group col-6 d-inline w-auto">
-                                <label class="form-control tenet-shop-label-tel tenet-shop-label has-no-border d-inline">شماره تلفن :</label>
-                                <input type="text" id="tenet-shop-telephone" class="form-control tenet-shop-input-tel d-inline has-no-border w-auto" readonly value="09121212112">
+                                <label class="form-control tenet-shop-label-tel tenet-shop-input tenet-shop-label has-no-border d-inline">شماره تلفن :</label>
+                                <input type="number" id="tenet-shop-telephone" class="form-control tenet-shop-input tenet-shop-input-tel d-inline has-no-border w-auto" readonly value="09121212112">
                             </div>
                             <div class="input-group tenet-shop-tel-group col-6 d-inline w-auto">
-                                <label class="form-control tenet-shop-label-tel tenet-shop-label has-no-border d-inline">شماره همراه :</label>
-                                <input type="text" id="tenet-shop-cellphone" class="form-control tenet-shop-input-tel d-inline has-no-border w-auto" readonly value="55453200">
+                                <label class="form-control tenet-shop-label-tel tenet-shop-label tenet-shop-input has-no-border d-inline">شماره همراه :</label>
+                                <input type="number" id="tenet-shop-cellphone" class="form-control tenet-shop-input tenet-shop-input-tel d-inline has-no-border w-auto" readonly value="55453200">
                             </div>
                         </div>
-                        <div class="input-group tenet-shop-tel-group w-auto">
-                            <label class="form-control tenet-shop-label-tel has-no-border w-auto">آدرس :</label>
-                            <textarea type="text" id="tenet-shop-address" class="form-control tenet-shop-input-address has-no-border w-50" readonly value="93154354" rows="3">تهران ونک چهارراه جهان کودک افریقا خیابان ناوک ساختمان ناوک طبقه دوم</textarea>
+                        <div class="input-group tenet-shop-tel-group tenet-shop-tel-address w-auto">
+                            <label class="form-control tenet-shop-label-tel has-no-border tenet-shop-tel-address-text tenet-shop-input w-auto">آدرس :</label>
+                            <textarea type="text" id="tenet-shop-address" class="form-control tenet-shop-input tenet-shop-input-address has-no-border w-50" readonly value="93154354" rows="3">تهران ونک چهارراه جهان کودک افریقا خیابان ناوک ساختمان ناوک طبقه دوم</textarea>
                         </div>
                         <div class=" w-auto">
-                            <label class="form-control has-no-border w-20">آدرس :</label>
+                            <label class="form-control has-no-border tenet-shop-input w-20">نقشه :</label>
                             <div id="map" class="tenet-neshan-map"></div>
-                            <p id="log">logs</p>
                         </div>
                         <div>
                         </div>
@@ -68,11 +80,20 @@
 
         </div>
 
-
-
-        <script src="../components/script/jquery-3.6.0.min.js"></script>
-        <script src="../components/script/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="script/script.js"></script>
+        <div class="tenet-validation-toast toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="ms-auto">خطای سیستم</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="tenet-validation-toast-body toast-body">
+                <strong class="tenet-validation-error-title "> لطفا خطاهای زیر را بررسی کنید: </strong>
+                <div class="tenet-validarion-toast-error-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../components/script/jquery-3.6.0.min.js "></script>
+    <script src="../components/script/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="script/script.js "></script>
 
 </body>
 

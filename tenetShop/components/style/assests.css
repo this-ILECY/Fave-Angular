@@ -30,3 +30,102 @@
 .tenet-hover-shadow:hover {
     box-shadow: rgb(182 200 215) 3px 3px 6px 0px inset, rgb(224 232 233 / 32%) -3px -3px 6px 1px inset;
 }
+
+.tenet-display-inline-block {
+    display: inline-block !important;
+}
+
+.tenet-display-none {
+    display: none !important;
+}
+
+.tenet-editable-input {
+    border-bottom: 1px solid #0003;
+}
+
+.tenet-form-border-not-valid {
+    border: 1px solid rgba(168, 2, 2, 0.555);
+    border-radius: 5px;
+}
+
+.tenet-form-border-is-valid {
+    border: 1px solid rgba(35, 168, 2, 0.555);
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.tooltip {
+    font-family: sansNormal;
+}
+
+@keyframes bell-ring {
+    0% {}
+    5%,
+    15% {
+        transform: rotate(25deg);
+    }
+    10%,
+    20% {
+        transform: rotate(-25deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.tenet-anim-add-done {
+    animation-name: bell-ring;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+/********
+*
+* toast:
+* 
+*********/
+
+.tenet-validation-toast {
+    position: fixed;
+    bottom: 4%;
+    right: 1%;
+    direction: rtl;
+}
+
+.tenet-validation-error {
+    margin: 0 2% 0% 0;
+    color: #9d1010;
+}
+
+@media only screen and (max-width: 915px) and (max-aspect-ratio:9/16) {
+    .tenet-validation-toast {
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        font-size: large;
+        padding-bottom: 20%;
+    }
+}
