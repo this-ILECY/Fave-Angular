@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../components/style/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/duotone.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/regular.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/light.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="../components/style/assests.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="tenet-mobile-menu menu d-none">
+        <nav class="menu__nav">
+            <img src="../components/logo/RecLogo.png" class="tenet-mobile-menu-logo img-fluid">
+            <table class="tenet-mobile-menu-ul menu__list r-list">
+                <tr class="tenet-mobile-menu-group menu__group">
+                    <td>
+                        <i class="fad fa-box-full tenet-mobile-menu-promotion tenet-mobile-menu-promotion-link fa-swap-opacity"></i>
+                    </td>
+                    <td>
+                        <p class="tenet-mobile-menu-promotion-text tenet-mobile-menu-promotion-link">پروموشن ها</p>
+                    </td>
+                </tr>
+                <tr class="tenet-mobile-menu-group menu__group">
+                    <td>
+                        <i class="fad fa-file-chart-pie tenet-mobile-menu-pie tenet-mobile-menu-pie-link"></i>
+                    </td>
+                    <td>
+                        <p class="tenet-mobile-menu-promotion-text tenet-mobile-menu-pie-link">گزارشات</p>
+                    </td>
+                </tr>
+                <tr class="tenet-mobile-menu-group menu__group">
+                    <td>
+                        <i class="fad fa-store tenet-mobile-menu-shop tenet-mobile-menu-shop-link"></i>
+                    </td>
+                    <td>
+                        <p class="tenet-mobile-menu-promotion-text tenet-mobile-menu-shop-link">فروشگاه من</p>
+                    </td>
+                </tr>
+                <tr class="tenet-mobile-menu-group menu__group"   data-bs-toggle="modal" data-bs-target="#tenetSideExit">
+                    <td>
+                        <i class="fad fa-power-off tenet-mobile-menu-logout tenet-mobile-menu-logout-link fa-swap-opacity"></i>
+                    </td>
+                    <td>
+                        <p class="tenet-mobile-menu-promotion-text tenet-mobile-menu-logout-link">خروج</p>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+        <button class="tenet-mobile-menu-group menu__toggle r-button" type="button">
+            <span class="menu__hamburger m-hamburger">
+                <span class="m-hamburger__label">
+                    <span class="menu__toggle-hint screen-reader">Open menu</span>
+                </span>
+            </span>
+        </button>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade tenet-nav-modal" id="tenetSideExit" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog tenet-nav-modal-dialog">
+            <div class="modal-content tenet-nav-modal-content w-auto">
+                <div class="modal-body tenet-nav-modal-body d-flex justify-content-between">
+                    <p class="tenet-nav-modal-text">میخوای خارج شی؟</p>
+                    <div class="tenet-nav-modal-buttons">
+                        <button type="button" class="btn btn-light tenet-nav-model-dismiss"
+                            data-bs-dismiss="modal">نه</button>
+                        <button type="button" class="btn btn-primary tenet-nav-modal-yes">بله، خارج شو</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../components/script/jquery-3.6.0.min.js"></script>
+    <script src="../components/script/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

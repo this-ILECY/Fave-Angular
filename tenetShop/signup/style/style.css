@@ -114,9 +114,9 @@ i.tenet-signup-forgotpass {
     }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 770px),
+(max-aspect-ratio: 3/4) and (max-width: 550px) and (min-width: 530px) {
 
-    
 
     body {
         background-image: url("../../components/bckgrnd/loginBack768.png");
@@ -124,8 +124,24 @@ i.tenet-signup-forgotpass {
     }
 }
 
-
-@media only screen and (max-width: 430px) {
+ /*41 : 59-ipad air*/
+ /*768/1024-ipad mini*/
+/*2/3-surface 7 pro*/  
+@media only screen and (max-aspect-ratio: 3/4) and (max-width: 770px) and (min-width: 766px),
+(min-aspect-ratio: 41 /59) and (max-width: 830px) and (min-width: 810px),
+(min-aspect-ratio: 2/3) and (max-width: 915px) and (min-width: 910px){
+   div#tenet-card-signup {
+       width: 60%;
+   }
+   .tenet-signup-username  ,
+   .tenet-signup-password ,
+   .tenet-signup-linkreg{
+       font-size: 1.5em;
+   }
+}
+@media only screen and (max-width: 430px),
+(max-aspect-ratio: 3/4) and (max-width: 550px) and (min-width: 530px) {
+    
     .tenet-sigup-single-logo {
         display: none;
     }

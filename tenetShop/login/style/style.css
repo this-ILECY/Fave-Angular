@@ -119,7 +119,8 @@ i.tenet-register-forgotpass {
     }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 770px),
+(max-aspect-ratio: 3/4) and (max-width: 550px) and (min-width: 530px) {
 
     .tenet-register-logincard {
         background: #fff;
@@ -131,18 +132,27 @@ i.tenet-register-forgotpass {
     }
 }
 
-/* @media only screen and (max-width: 450px) {
-    .tenet-register-logincard {
-        height: 100%;
-        background: #fff;
-        border-radius: 0 !important;
-    }
-    i.tenet-register-forgotpass {
-        margin-top: 2%;
-    }
-} */
 
-@media only screen and (max-width: 430px) {
+ /*41 : 59-ipad air*/
+ /*768/1024-ipad mini*/
+/*2/3-surface 7 pro*/  
+ @media only screen and (max-aspect-ratio: 3/4) and (max-width: 770px) and (min-width: 766px),
+ (min-aspect-ratio: 41 /59) and (max-width: 830px) and (min-width: 810px),
+ (min-aspect-ratio: 2/3) and (max-width: 915px) and (min-width: 910px){
+    div#tenet-card-login {
+        width: 60%;
+    }
+    .tenet-register-username  ,
+    .tenet-register-password ,
+    .tenet-register-linkreg{
+        font-size: 1.5em;
+    }
+}
+
+
+
+@media only screen and (max-width: 430px),
+(max-aspect-ratio: 3/4) and (max-width: 550px) and (min-width: 530px) {
     .tenet-sigup-single-logo {
         display: none;
     }
