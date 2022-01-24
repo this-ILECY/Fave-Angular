@@ -131,7 +131,7 @@
 
 .tenet-pro-modal-icon-item {
     font-size: 3vh;
-    margin: 0 auto;
+    margin: 0 10px;
 }
 
 .tenet-pro-modal-icon-item:hover {
@@ -190,7 +190,9 @@
     padding-left: 0;
     direction: ltr;
 }
-
+.tenet-pro-modal-icons{
+direction: ltr;
+}
 
 /***************Media Queries****************/
 
@@ -223,17 +225,126 @@
     .tenet-pro-card-full {
         width: 100%;
     }
+
     .tenet-shop-main-card {
         width: 100%;
     }
+
     .tenet-card-main-row {
         --bs-gutter-x: 0;
     }
+
     .tenet-shop-body {
         padding: 0;
     }
 }
 
+/*2/3-surface 7 pro*/
+
+@media only screen and (min-aspect-ratio: 2/3) and (max-width: 915px) and (min-width: 910px) {
+    .tenet-pro-modal-main>.modal-dialog {
+        margin: 50px;
+        display: flex;
+        max-width: fit-content;
+    }
+}
+
+/*surface duo*/
+@media only screen and(max-aspect-ratio: 3/4) and (max-width: 550px) and (min-width: 530px) {
+    .tenet-pro-modal-main>.modal-dialog {
+        margin: 25px;
+        display: flex;
+        max-width: fit-content;
+    }
+
+    .tenet-pro-card-time-logo,
+    .tenet-card-modal-close,
+    .tenet-pro-modal-time-logo,
+    .tenet-pro-modal-shop-name,
+    .tenet-pro-modal-main * p {
+        font-size: 30px;
+    }
+
+    .tenet-pro-modal-title {
+        width: 58.33333333%;
+        flex: 0 0 auto;
+    }
+
+    .tenet-pro-modal-class-div {
+        width: 41.66666667%;
+        flex: 0 0 auto;
+    }
+}
+
+/*ipad air 
+and Ipad mini 
+and surface pro 7*/
+
+@media only screen and (min-aspect-ratio: 41 /59) and (max-width: 830px) and (min-width: 810px),
+(max-aspect-ratio: 3/4) and (max-width: 770px) and (min-width: 766px),
+(min-aspect-ratio: 2/3) and (max-width: 915px) and (min-width: 910px) {
+    .tenet-pro-modal-main>.modal-dialog {
+        margin: 25px;
+        display: flex;
+        max-width: fit-content;
+    }
+
+    .tenet-pro-card-time-logo,
+    .tenet-card-modal-close,
+    .tenet-pro-modal-time-logo,
+    .tenet-pro-modal-shop-name,
+    .tenet-pro-modal-main * p,
+    .card-body.tenet-pro-card-body * p {
+        font-size: 27px;
+    }
+
+    .tenet-pro-modal-title {
+        width: 58.33333333%;
+        flex: 0 0 auto;
+    }
+
+    .tenet-pro-modal-class-div {
+        width: 41.66666667%;
+        flex: 0 0 auto;
+    }
+}
+
+/*galaxy a51/71*/
+@media only screen and (max-aspect-ratio: 206/457) and (max-width: 420px) and (min-width: 400px) {
+    .tenet-pro-modal-main>.modal-dialog {
+        margin: 5px;
+        display: flex;
+        max-width: fit-content;
+    }
+
+    .tenet-pro-card-time-logo,
+    .tenet-card-modal-close,
+    .tenet-pro-modal-time-logo,
+    .tenet-pro-modal-shop-name,
+    .tenet-pro-modal-main * p {
+        font-size: 22px;
+    }
+
+    .tenet-pro-modal-icons {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+/*iphone XR*/
+@media only screen and (max-aspect-ratio: 207/448) and (max-width: 416px) and (min-width: 412px),
+(max-aspect-ratio: 195 / 422) and (max-width: 395px) and (min-width: 385px),
+(max-aspect-ratio: 18/37) and (max-width: 365px) and (min-width: 355px),
+(max-aspect-ratio: 412/915) and (max-width: 415px) and (min-width: 410px),
+(max-aspect-ratio: 280/653) and (max-width: 285px) and (min-width: 275px) {
+    .tenet-pro-modal-icons {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+    .tenet-card-modal-close {
+        padding-right: 10px;
+    }
+}
 
 /*1024-750*/
 

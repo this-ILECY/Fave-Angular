@@ -7,3 +7,82 @@ body {
     padding: 0 1% 10% 1%;
     background: #FFF;
 }
+
+.tenet-shop-pro-top-row {
+    padding: 10px 0;
+}
+
+.tenet-shop-pro-top-category {
+    direction: ltr;
+    font-size: 30px;
+    color: #8b9d5f;
+}
+
+.tenet-shop-pro-top-name {
+    font-family: 'sansBold';
+    color: #8b9d5f;
+}
+
+.tenet-shop-pro-top-filter {
+    display: inline;
+    font-size: 18px;
+}
+
+.tenet-shop-pro-top-category:hover {
+    cursor: pointer;
+}
+
+
+.tenet-shop-pro-filter-radios {
+    border-left: 1px #0000002e solid;
+}
+
+.tenet-shop-pro-filter-body {
+    border: 1px #0000002e solid;
+    border-radius: 16px;
+    background: #e5edd1;
+}
+
+.tenet-pro-filter-class {
+    color: #667443;
+    font-size: 20px;
+}
+
+.tenet-shop-pro-filter-checks>label {
+    padding-right: 5px;
+}
+
+.tenet-shop-pro-filter-checks>input {
+    width: 15px;
+    margin-top: 3px;
+}
+
+.tenet-shop-pro-filter-submit {
+    margin-top: 15px;
+    color: #fff;
+    background: #8b9d5f;
+}
+
+.tenet-shop-pro-filter-submit:hover {
+    color: #8b9d5f;
+    background: #fff;
+}
+
+/******************media queries*********************/
+
+@media only screen and (max-width: 420px) {
+    .tenet-shop-pro-top-row {
+        padding: 20px 0 10px 0;
+    }
+    .tenet-pro-modal-class-div {
+        font-size: 3vh !important;
+    }
+    .tenet-shop-pro-top-name {
+        padding-right: 20px;
+    }
+
+    .tenet-shop-pro-filter-radios {
+        border-left: none;
+        margin-bottom: 10px;
+    }
+}

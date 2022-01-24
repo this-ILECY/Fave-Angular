@@ -27,13 +27,104 @@
         <div class="tenet-shop-row">
             <!--MainCard-->
             <div class="col-9 m-auto mt-0 position-relative tenet-shop-main-card">
+
                 <div class="row tenet-card-main-row">
+                    <!--top row-->
+                    <div class="row tenet-shop-pro-top-row">
+                        <h2 class="tenet-shop-pro-top-name col-6">پروموشن ها</h2>
+                        <div class="tenet-shop-pro-top-category col-6" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="tenet-shop-pro-top-filter-icon fad fa-filter fa-swap-opacity"></i>
+                            <p class="tenet-shop-pro-top-filter">فیلتر</p>
+                        </div>
+                        <div id="collapseOne" class="tenet-shop-pro-filter-body accordion-collapse collapse"
+                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="tenet-shop-pro-filter-radios col-12 col-sm-6">
+                                            <p>مرتب سازی بر اساس:</p>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="tenet-shop-pro-radio-cheap">
+                                                <label class="form-check-label" for="tenet-shop-pro-radio-cheap">
+                                                    ارزان ترین
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="tenet-shop-pro-radio-expensive">
+                                                <label class="form-check-label" for="tenet-shop-pro-radio-expensive">
+                                                    گران ترین
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="tenet-shop-pro-radio-moretime">
+                                                <label class="form-check-label" for="tenet-shop-pro-radio-moretime">
+                                                    بیشترین زمان استفاده </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" checked type="radio"
+                                                    name="flexRadioDefault" id="tenet-shop-pro-radio-lesstime">
+                                                <label class="form-check-label" for="tenet-shop-pro-radio-lesstime">
+                                                    کمترین زمان استفاده
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="tenet-shop-pro-radio-popular">
+                                                <label class="form-check-label" for="tenet-shop-pro-radio-popular">
+                                                    محبوب ترین
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="tenet-shop-pro-filter-other col-12 col-sm-6">
+                                            <div class="form-check tenet-shop-pro-filter-checks d-flex">
+                                                <input type="checkbox" class="form-check tenet-shop-pro-filter-class"
+                                                    id="tenet-shop-pro-filter-classc">
+                                                <label for="tenet-shop-pro-filter-classc" class="form-label">
+                                                    <i class="fad fa-medal tenet-pro-filter-class"></i>
+                                                </label>
+                                            </div>
+                                            <div class="form-check tenet-shop-pro-filter-checks d-flex">
+                                                <input type="checkbox" class="form-check tenet-shop-pro-filter-class"
+                                                    id="tenet-shop-pro-filter-classb">
+                                                <label for="tenet-shop-pro-filter-classc" class="form-label">
+                                                    <i class="fad fa-medal tenet-pro-filter-class"></i>
+                                                    <i class="fad fa-medal tenet-pro-filter-class"></i>
+                                                </label>
+                                            </div>
+                                            <div class="form-check tenet-shop-pro-filter-checks d-flex">
+                                                <input type="checkbox" class="form-check tenet-shop-pro-filter-class"
+                                                    id="tenet-shop-pro-filter-classa">
+                                                <label for="tenet-shop-pro-filter-classc" class="form-label">
+                                                    <i class="fad fa-medal tenet-pro-filter-class"></i>
+                                                    <i class="fad fa-medal tenet-pro-filter-class"></i>
+                                                    <i class="fad fa-medal tenet-pro-filter-class"></i>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <button
+                                            class="btn tenet-shop-pro-filter-submit tenet-box-shadow tenet-hover-shadow"
+                                            type="submit">اعمال فیلتر</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--cards-->
                     <!-- 
 
                     Best:
                     -->
                     <!--Best promotion Card-->
-                    <div id="tenet-shop-promotion-best" class="d-none tenet-pro-card-full col-xl-3 col-lg-4 col-md-6 col-sm-12 tenet-pro-card-best tenet-box-shadow tenet-hover-shadow" data-bs-toggle="modal" data-bs-target="#tenetPromotionModal">
+                    <div id="tenet-shop-promotion-best"
+                        class="d-none tenet-pro-card-full col-xl-3 col-lg-4 col-md-6 col-sm-12 tenet-pro-card-best tenet-box-shadow tenet-hover-shadow"
+                        data-bs-toggle="modal" data-bs-target="#tenetPromotionModal">
                         <div class="card-body tenet-pro-card-body">
                             <div class="tenet-pro-card-row row">
                                 <div class="col tenet-pro-card-class-div">
@@ -44,16 +135,21 @@
                                 <div class="col tenet-pro-card-left">
                                     <h6 class="tenet-pro-card-after-price">12500</h6>
                                     <div class="tenet-pro-card-price-percent d-flex">
-                                        <p class="tenet-pro-card-before-price tenet-card-best-before w-auto"><del>25000</del></p>
+                                        <p class="tenet-pro-card-before-price tenet-card-best-before w-auto">
+                                            <del>25000</del>
+                                        </p>
                                         <p class="tenet-pro-card-percent tenet-card-best-percent w-auto">50%</p>
                                     </div>
                                 </div>
-                                <h5 class="tenet-pro-card-title justify-content-center tenet-pro-card-row row">پیتزای سبزیجات خراب</h5>
+                                <h5 class="tenet-pro-card-title justify-content-center tenet-pro-card-row row">
+                                    پیتزای
+                                    سبزیجات خراب</h5>
                                 <div class="d-flex tenet-pro-card-where tenet-pro-card-row row">
                                     <p class="w-auto tenet-pro-card-from">از:</p>
                                     <h6 class="w-auto tenet-pro-card-shop">ویرا سیستم</h6>
                                 </div>
-                                <div class="tenet-pro-card-time d-flex justify-content-end ps-0 tenet-pro-card-row row ">
+                                <div
+                                    class="tenet-pro-card-time d-flex justify-content-end ps-0 tenet-pro-card-row row ">
                                     <div class="tenet-card-quantity col-6">
                                         <p class="tenet-card-quantity-title d-inline-block">باقی مانده:</p>
                                         <p class="tenet-card-quantity-count d-inline-block">17</p>
@@ -71,7 +167,9 @@
                     Middle:
                     -->
                     <!--Middle promotion Card-->
-                    <div id="tenet-shop-promotion-middle" class="d-none tenet-pro-card-full col-xl-3 col-lg-4 col-md-6 col-sm-12 tenet-pro-card-middle tenet-box-shadow tenet-hover-shadow " data-bs-toggle="modal" data-bs-target="#tenetPromotionModal">
+                    <div id="tenet-shop-promotion-middle"
+                        class="d-none tenet-pro-card-full col-xl-3 col-lg-4 col-md-6 col-sm-12 tenet-pro-card-middle tenet-box-shadow tenet-hover-shadow "
+                        data-bs-toggle="modal" data-bs-target="#tenetPromotionModal">
                         <div class="card-body tenet-pro-card-body ">
                             <div class="tenet-pro-card-row row ">
                                 <div class="col tenet-pro-card-class-div ">
@@ -82,16 +180,21 @@
                                 <div class="col tenet-pro-card-left ">
                                     <h6 class="tenet-pro-card-after-price ">12500</h6>
                                     <div class="tenet-pro-card-price-percent d-flex ">
-                                        <p class="tenet-pro-card-before-price tenet-card-middle-before w-auto "><del>25000</del></p>
+                                        <p class="tenet-pro-card-before-price tenet-card-middle-before w-auto ">
+                                            <del>25000</del>
+                                        </p>
                                         <p class="tenet-pro-card-percent tenet-card-middle-percent w-auto ">50%</p>
                                     </div>
                                 </div>
-                                <h5 class="tenet-pro-card-title justify-content-center tenet-pro-card-row row ">آب هویج بستنی ترش</h5>
+                                <h5 class="tenet-pro-card-title justify-content-center tenet-pro-card-row row ">آب
+                                    هویج
+                                    بستنی ترش</h5>
                                 <div class="d-flex tenet-pro-card-where tenet-pro-card-row row ">
                                     <p class="w-auto tenet-pro-card-from ">از:</p>
                                     <h6 class="w-auto tenet-pro-card-shop ">ویرا سیستم</h6>
                                 </div>
-                                <div class="tenet-pro-card-time d-flex justify-content-end ps-0 tenet-pro-card-row row ">
+                                <div
+                                    class="tenet-pro-card-time d-flex justify-content-end ps-0 tenet-pro-card-row row ">
                                     <div class="tenet-card-quantity col-6">
                                         <p class="tenet-card-quantity-title d-inline-block">باقی مانده:</p>
                                         <p class="tenet-card-quantity-count d-inline-block">17</p>
@@ -109,7 +212,9 @@
                     Worst:
                     -->
                     <!--Worst promotion Card-->
-                    <div id="tenet-shop-promotion-Worst" class="d-none tenet-pro-card-full col-xl-3 col-lg-4 col-md-6 col-sm-12 tenet-pro-card-worst tenet-box-shadow tenet-hover-shadow " data-bs-toggle="modal" data-bs-target="#tenetPromotionModal">
+                    <div id="tenet-shop-promotion-Worst"
+                        class="d-none tenet-pro-card-full col-xl-3 col-lg-4 col-md-6 col-sm-12 tenet-pro-card-worst tenet-box-shadow tenet-hover-shadow "
+                        data-bs-toggle="modal" data-bs-target="#tenetPromotionModal">
                         <div class="card-body tenet-pro-card-body ">
                             <div class="tenet-pro-card-row row ">
                                 <div class="col tenet-pro-card-class-div ">
@@ -120,16 +225,21 @@
                                 <div class="col tenet-pro-card-left ">
                                     <h6 class="tenet-pro-card-after-price ">12500</h6>
                                     <div class="tenet-pro-card-price-percent d-flex ">
-                                        <p class="tenet-pro-card-before-price tenet-card-worst-before w-auto "><del>25000</del></p>
+                                        <p class="tenet-pro-card-before-price tenet-card-worst-before w-auto ">
+                                            <del>25000</del>
+                                        </p>
                                         <p class="tenet-pro-card-percent tenet-card-worst-percent w-auto ">50%</p>
                                     </div>
                                 </div>
-                                <h5 class="tenet-pro-card-title justify-content-center tenet-pro-card-row row ">شیر فاسد</h5>
+                                <h5 class="tenet-pro-card-title justify-content-center tenet-pro-card-row row ">شیر
+                                    فاسد
+                                </h5>
                                 <div class="d-flex tenet-pro-card-where tenet-pro-card-row row ">
                                     <p class="w-auto tenet-pro-card-from ">از:</p>
                                     <h6 class="w-auto tenet-pro-card-shop ">ویرا سیستم</h6>
                                 </div>
-                                <div class="tenet-pro-card-time d-flex justify-content-end ps-0 tenet-pro-card-row row ">
+                                <div
+                                    class="tenet-pro-card-time d-flex justify-content-end ps-0 tenet-pro-card-row row ">
                                     <div class="tenet-card-quantity col-6">
                                         <p class="tenet-card-quantity-title d-inline-block">باقی مانده:</p>
                                         <p class="tenet-card-quantity-count d-inline-block">17</p>
@@ -142,64 +252,74 @@
                             </div>
                         </div>
                     </div>
-                    <!--Promotion Modal-->
-                    <div class="modal tenet-pro-modal-main fade p-0" id="tenetPromotionModal" tabindex="-1" aria-labelledby="tenetPromotionModal" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content tenet-pro-modal-content">
-                                <div class="modal-header tenet-pro-modal-header">
-                                    <i class="tenet-card-modal-close fad fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
-                                    <div class="tenet-pro-modal-icons col-3 d-flex align-items-center">
-                                        <i class="tenet-pro-modal-icon-item tenet-pro-modal-cart fad fa-star-shooting"></i>
-                                        <i class="tenet-pro-modal-icon-item tenet-pro-modal-report fad fa-exclamation-circle"></i>
-                                        <i class="tenet-pro-modal-icon-item tenet-pro-modal-wishlist fad fa-cart-plus "></i>
-                                    </div>
-                                </div>
-                                <div class="tenet-pro-modal-body modal-body">
-                                    <div class="tenet-pro-modal-name row">
-                                        <h6 class="tenet-pro-modal-title col-12 col-md-8">نام کالا</h6>
-                                        <div class="col tenet-pro-modal-class-div col-12 col-md-4">
-                                            <i class="fad fa-medal tenet-pro-modal-class"></i>
-                                            <i class="fad fa-medal tenet-pro-modal-class"></i>
-                                            <i class="fad fa-medal tenet-pro-modal-class"></i>
-                                        </div>
-                                    </div>
-                                    <div class="tenet-pro-modal-price-row row">
-                                        <i class="w-auto fad fa-history tenet-pro-modal-time-logo"></i>
-                                        <p class="w-auto tenet-pro-modal-time-text">01:25:30</p>
-                                        <div class="col tenet-pro-modal-left">
-                                            <h6 class="tenet-pro-modal-after-price">12500</h6>
-                                            <div class="tenet-pro-modal-price-percent d-flex">
-                                                <p class="tenet-pro-modal-before-price tenet-pro-modal-best-before w-auto"><del>25000</del></p>
-                                                <p class="tenet-pro-modal-percent tenet-pro-modal-best-percent w-auto">50%</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tenet-pro-modal-des-row row">
-                                        <p class="tenet-pro-modal-des">این یک توضیح کوتاه درباره محصولی است که روی آن کلیک کرده اید. کالا هایی که در "فیو" به شما نمایش داده می شود، فاسد، خراب، و به طرز باورنکردنی ای مسموم و غیرقابل استفاده است. از هرگونه پرداخت در این بدافزار بپرهیزید.
-                                            باتشکر، مدیریت محترم :)</p>
-                                    </div>
-                                    <div class="tenet-pro-modal-address-row row">
-                                        <p class="tenet-pro-modal-address-title">آدرس:</p>
-                                        <p class="tenet-pro-modal-address">تهران ونک خیابان چهارراه جهان کودک خیابان افریقا نبش کوچه ناوک ساختمان ناوک طبقه دوم به جاش قراره مپ بذاریم! :)</p>
-                                    </div>
-                                </div>
-                                <div class="modal-footer tenet-pro-modal-footer">
-                                    <div class="tenet-pro-modal-shop-row d-flex align-items-center row">
-                                        <img src="../components/img/user.png" class="tenet-pro-modal-profile border col-1">
-                                        </img>
-                                        <h6 class="tenet-pro-modal-shop-name col-8">نام فروشگاه</h6>
-                                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!--Promotion Modal-->
+        <div class="modal tenet-pro-modal-main fade p-0" id="tenetPromotionModal" tabindex="-1"
+            aria-labelledby="tenetPromotionModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content tenet-pro-modal-content">
+                    <div class="modal-header tenet-pro-modal-header">
+                        <i class="tenet-card-modal-close fad fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
+                        <div class="tenet-pro-modal-icons col-3 d-flex align-items-center">
+                            <i class="tenet-pro-modal-icon-item tenet-pro-modal-cart fad fa-trash"></i>
+                            <i class="tenet-pro-modal-icon-item tenet-pro-modal-wishlist fad fa-pencil"></i>
+                        </div>
+                    </div>
+                    <div class="tenet-pro-modal-body modal-body">
+                        <div class="tenet-pro-modal-name row">
+                            <h6 class="tenet-pro-modal-title col-12 col-md-7">نام کالا</h6>
+                            <div class="col tenet-pro-modal-class-div col-12 col-md-5">
+                                <i class="fad fa-medal tenet-pro-modal-class"></i>
+                                <i class="fad fa-medal tenet-pro-modal-class"></i>
+                                <i class="fad fa-medal tenet-pro-modal-class"></i>
+                            </div>
+                        </div>
+                        <div class="tenet-pro-modal-price-row row">
+                            <i class="w-auto fad fa-history tenet-pro-modal-time-logo"></i>
+                            <p class="w-auto tenet-pro-modal-time-text">01:25:30</p>
+                            <div class="col tenet-pro-modal-left">
+                                <h6 class="tenet-pro-modal-after-price">12500</h6>
+                                <div class="tenet-pro-modal-price-percent d-flex">
+                                    <p class="tenet-pro-modal-before-price tenet-pro-modal-best-before w-auto">
+                                        <del>25000</del>
+                                    </p>
+                                    <p class="tenet-pro-modal-percent tenet-pro-modal-best-percent w-auto">
+                                        50%</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="tenet-pro-modal-des-row row">
+                            <p class="tenet-pro-modal-des">این یک توضیح کوتاه درباره محصولی است که روی
+                                آن
+                                کلیک کرده اید. کالا هایی که در "فیو" به شما نمایش داده می شود، فاسد،
+                                خراب، و
+                                به طرز باورنکردنی ای مسموم و غیرقابل استفاده است. از هرگونه پرداخت در
+                                این
+                                بدافزار بپرهیزید.
+                                باتشکر، مدیریت محترم :)</p>
+                        </div>
+                        <div class="tenet-pro-modal-address-row row">
+                            <p class="tenet-pro-modal-address-title">آدرس:</p>
+                            <p class="tenet-pro-modal-address">تهران ونک خیابان چهارراه جهان کودک خیابان
+                                افریقا نبش کوچه ناوک ساختمان ناوک طبقه دوم به جاش قراره مپ بذاریم! :)
+                            </p>
+                        </div>
                     </div>
-
+                    <div class="modal-footer tenet-pro-modal-footer">
+                        <div class="tenet-pro-modal-shop-row d-flex align-items-center row">
+                            <img src="../components/img/user.png" class="tenet-pro-modal-profile border col-1">
+                            </img>
+                            <h6 class="tenet-pro-modal-shop-name col-8">نام فروشگاه</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
         <script src="../components/script/jquery-3.6.0.min.js "></script>
         <script src="../components/script/dist/js/bootstrap.bundle.min.js "></script>
         <script src="script/script.js "></script>

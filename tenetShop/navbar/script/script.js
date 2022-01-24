@@ -12,6 +12,13 @@ $(document).ready(function() {
     $(".tenet-nav-report-hover").mouseout(function() {
         $(".tenet-nav-pie").removeClass("fa-swap-opacity");
     });
+    /*new promotion swap opacity changer*/
+    $(".tenet-nav-newpro-hover").mouseover(function() {
+        $(".tenet-nav-newpro").addClass("fa-swap-opacity");
+    });
+    $(".tenet-nav-newpro-hover").mouseout(function() {
+        $(".tenet-nav-newpro").removeClass("fa-swap-opacity");
+    });
     /*promotion swap opacity changer*/
     $(".tenet-nav-promotion-hover").mouseover(function() {
         $(".tenet-nav-promotion").removeClass("fa-swap-opacity");

@@ -23,6 +23,7 @@ let UrlpromotionByID = "https://localhost:44377/api/Promotion/PromotionByShopID?
 
 $(document).ready(() => {
     promotionLoader()
+
 });
 
 let promotionLoader = () => {
@@ -39,7 +40,6 @@ let promotionLoader = () => {
 
 let promotionAdder = () => {
     console.log(promotionList)
-    debugger;
     for (i = 0; i < promotionList.length; i++) {
         if (promotionList[i].qualityGrade == 1) {
             promotionBest.removeClass("d-none").clone().appendTo(".tenet-card-main-row").attr('id', 'BestPromo' + i)
@@ -61,3 +61,33 @@ let promotionAdder = () => {
     promotionMiddle.addClass("d-none")
     promotionWorst.addClass("d-none")
 };
+
+ /*filter swap opacity changer*/
+ $(".tenet-shop-pro-top-category").mouseover(function() {
+    $(".tenet-shop-pro-top-filter-icon").removeClass("fa-swap-opacity");
+    $(".tenet-shop-pro-top-filter").css("color","#dde5ca")
+    
+});
+$(".tenet-shop-pro-top-category").mouseout(function() {
+    $(".tenet-shop-pro-top-filter-icon").addClass("fa-swap-opacity");
+    $(".tenet-shop-pro-top-filter").css("color","#8b9d5f")
+});
+
+
+
+
+/***************************
+ * 
+ * range slider
+ * 
+ * *********************** */
+$("#tenet-shop-filter-slider2").change(()=>{
+    let a = $("#tenet-shop-filter-slider2").val()
+     $(".tenet-shop-pro-filter-lblrange2").val(a)
+     $(".tenet-shop-pro-filter-lblrange2").text(a)
+ });
+$("#tenet-shop-filter-slider1").change(()=>{
+    let a = $("#tenet-shop-filter-slider1").val()
+     $(".tenet-shop-pro-filter-lblrange1").val(a)
+     $(".tenet-shop-pro-filter-lblrange1").text(a)
+ });
