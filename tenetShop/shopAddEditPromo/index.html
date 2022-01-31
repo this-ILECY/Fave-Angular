@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="../components/style/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/duotone.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/regular.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/light.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link href="../components/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="../components/style/assests.css" rel="stylesheet">
+
+
+    <title>add or edit</title>
+</head>
+
+<body>
+    <div class="container-fluid tenet-shop-body">
+
+        <div class="tenet-shop-row">
+            <!--MainCard-->
+            <div class="col-9 m-auto mt-0 position-relative tenet-shop-main-card">
+
+                <div class="row tenet-card-main-row">
+                    <!--top row-->
+                    <div class="row tenet-shop-addpro-top-row">
+                        <h2 class="tenet-shop-addpro-top-name">پروموشن جدید</h2>
+
+
+                    </div>
+
+                    <div class="tenet-shop-addpro-main">
+                        <form>
+                            <hr>
+                            <p class="tenet-shop-addpro-prod-info translate-middle-y">مشخصات کالا</p>
+                            <!--promotion name and class-->
+                            <div class="tenet-shop-addpro-name-class input-group">
+                                <div class="form-floating col-8">
+                                    <input id="promo-name" class="form-control" type="text" placeholder="نام کالا">
+                                    <label for="promo-name">نام کالا</label>
+                                </div>
+                                <select id="tenet-shop-addpro-class" class="form-select tenet-shop-addpro-class">
+                                    <option selected disabled value="0">انتخاب کنید...</option>
+                                    <option value="a">خراب</option>
+                                    <option value="b">فاسد</option>
+                                    <option value="c">بیماری زا</option>
+                                </select>
+                            </div>
+                            <!--promotion description-->
+                            <div class="form-floating">
+                                <textarea id="promo-desc" class="form-control" rows="4"
+                                    placeholder="درباره کالا..."></textarea>
+                                <label for="promo-desc" value="درباره کالا...">درباره کالا...</label>
+                            </div>
+                            <hr>
+                            <p class="tenet-shop-addpro-prod-info translate-middle-y">تخفیف و زمان بندی</p>
+                            <div>
+                                <!--discount place-->
+                                <div class="tenet-shop-addpro-discount ">
+                                    <div class="input-group-main d-flex">
+                                        <div class="input-group tenet-shop-addpro-discount-percent">
+                                            <div class="form-check">
+                                                <input class="form-check-input tenet-shop-addpro-radio-dispercent"
+                                                    type="radio" name="flexRadioDefault" id="radio-dispercent">
+                                                <label class="form-check-label" for="radio-dispercent">
+                                                    درصد تخفیف
+                                                </label>
+                                            </div>
+                                            <input type="text" disabled
+                                                class="form-control tenet-shop-addpro-radio-dispercent-text">
+                                        </div>
+
+                                        <div class="input-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input tenet-shop-addpro-radio-disprice"
+                                                    type="radio" name="flexRadioDefault" id="radio-disprice">
+                                                <label class="form-check-label" for="radio-disprice">
+                                                    مبلغ تخفیف
+                                                </label>
+
+                                            </div>
+                                            <input type="text" disabled
+                                                class="form-control tenet-shop-addpro-radio-disprice-text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End time-->
+                                <div class="tenet-shop-addpro-endtime">
+                                    <p class="tenet-shop-addpro-endtime-title">زمان پایان:</p>
+                                    <div class="form-floating">
+                                        <input id="txt-end-day" type="text"
+                                            class="form-control tenet-shop-addpro-end-day-text" placeholder="روز">
+                                        <label for="txt-end-day" value="روز">روز</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input id="txt-end-hour" type="text"
+                                            class="form-control tenet-shop-addpro-end-hour-text" placeholder="ساعت">
+                                        <label for="txt-end-hour" value="ساعت">ساعت</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input id="txt-end-min" type="text"
+                                            class="form-control tenet-shop-addpro-end-minute-text" placeholder="دقیقه">
+                                        <label for="txt-end-min" value="دقیقه">دقیقه</label>
+                                    </div>
+                                    <div class="tenet-shop-addpro-discount-time">
+                                        <p class="tenet-shop-addpro-endtime-text">تاریخ پایان:</p>
+                                        <p id="tenet-shop-addpro-endtime-day">امروز</p>
+                                        <p id="tenet-shop-addpro-endtime-remains"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tenet-shop-addpro-sub-div">
+                                <p class="btn tenet-shop-addpro-submit tenet-box-shadow tenet-hover-shadow">ثبت</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <script src="../components/script/jquery-3.6.0.min.js "></script>
+            <script src="../components/script/dist/js/bootstrap.bundle.min.js "></script>
+            <script src="script/script.js "></script>
+
+</body>
+
+</html>

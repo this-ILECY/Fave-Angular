@@ -1,0 +1,113 @@
+    body {
+        direction: rtl;
+        font-family: 'sansNormal';
+    }
+
+    .tenet-shop-addpro-top-name {
+        font-family: 'sansBold';
+        color: #8b9d5f;
+    }
+
+    .tenet-shop-addpro-top-row {
+        padding: 10px 0;
+    }
+
+    .form-floating>label {
+        right: 0;
+        left: auto;
+    }
+
+    .tenet-shop-addpro-discount>.form-check {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tenet-shop-addpro-discount>.form-check>.form-check-input {
+        position: absolute;
+        right: 0;
+    }
+
+    .tenet-shop-addpro-discount>.form-check>.form-check-label {
+        padding-right: 1.3em;
+    }
+
+    .form-check .form-check-input {
+        float: none;
+        margin-left: 0;
+    }
+
+    .input-group-main>.input-group {
+        width: calc(50% - 10px);
+
+    }
+
+    .tenet-shop-addpro-discount-percent {
+        padding-left: 20px;
+    }
+
+    .tenet-shop-addpro-name-class,
+    .tenet-shop-addpro-endtime,
+    .tenet-shop-addpro-discount {
+        margin-bottom: 15px;
+    }
+
+    .tenet-shop-addpro-endtime>.form-floating,
+    .tenet-shop-addpro-endtime-title,
+    .tenet-shop-addpro-discount-time {
+        margin-left: 15px;
+        width: 10%;
+        display: inline-block;
+    }
+
+    .tenet-shop-addpro-endtime-title {
+        line-height: 3;
+    }
+
+    .tenet-shop-addpro-prod-info {
+        font-family: 'sansBold';
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    #tenet-shop-addpro-endtime-day, #tenet-shop-addpro-endtime-remains {
+        display: inline-block;
+    }
+
+    .tenet-shop-addpro-submit {
+        color: #fff;
+        background: #8b9d5f;
+        width: 20%;
+    }
+
+    .tenet-shop-addpro-submit:hover {
+        color: #8b9d5f;
+        background: #e7ffac;
+    }
+
+    .tenet-shop-addpro-sub-div {
+        position: relative;
+    }
+
+    .tenet-shop-addpro-submit {
+        position: absolute;
+        left: 0;
+    }
+
+    /*375/667-Iphone SE*/
+
+    @media only screen and (max-aspect-ratio: 375/667) and (max-width: 380px) and (min-width: 370px) {
+        .tenet-shop-addpro-endtime>.form-floating {
+            width: calc(33% - 5px);
+            margin: 0;
+        }
+
+        .tenet-shop-addpro-endtime-title,
+        .tenet-shop-addpro-discount-time {
+            width: 100%;
+            margin: 0;
+        }
+
+        .input-group-main>.input-group {
+            width: 100;
+        }
+    }
